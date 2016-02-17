@@ -8,10 +8,14 @@
 
 import UIKit
 
+
 class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     var businesses: [Business]!
     var businessesBackup: [Business]!
+class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    var businesses: [Business]!
     var searchBar: UISearchBar!
     
     @IBOutlet weak var tableView: UITableView!
@@ -44,7 +48,11 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
 /* Example of Yelp search with more search options specified
         Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
+<<<<<<< HEAD
         
+=======
+            
+>>>>>>> e1bfc27179363ad05f83941d9581ffce0c4995ce
             for business in businesses {
                 print(business.name!)
                 print(business.address!)
@@ -74,6 +82,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
+<<<<<<< HEAD
     // Searchbar
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         
@@ -113,6 +122,9 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         searchBar.resignFirstResponder()
     }
 
+=======
+    
+>>>>>>> e1bfc27179363ad05f83941d9581ffce0c4995ce
 
     /*
     // MARK: - Navigation
